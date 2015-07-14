@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 3.1} \\
+      \large\textit{Problems = \{ 1, 3, 6, 11, 13, 14, 16 \}} \\
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}1) List all the steps used by Algorithm 1 to find the maximum of the list 1,8,12,9,11,2,14,5,10,4. \\
+\setlength\parindent{24pt} I'm going to write Algorithm 1 is pseudo code and comment each line discussing what is happening in \\each step. \\
+~\\
+$\textbf{procedure} \: max(a_1, a_2 . . . a_n: integers)$ {\tiny Declare a procedure or function called max which takes integers as input} \\
+$\textit{max} := a_1$ {\tiny the variable max gets the value of $a_1$}\\
+$\textbf{for}$ i := 2 to n {\tiny iterate from the second position in the list to the length of the list} \\
+\setlength\parindent{48pt} $\textbf{if} \:max < a_i \textbf{then}$ max := $a_i$ {\tiny if the value in max is less then the next iterated value - then put this new value into max.} \\
+\setlength\parindent{24pt}$\textbf{return}$ max {\tiny return element in the variable max.} \\
+{\tiny *See attached paper for handwritten table breakdown.} \\
+
+~\\
+\setlength\parindent{0pt}3) Devise an algorithm that finds the sum of all integers in a list. \\
+~\\
+\setlength\parindent{24pt}$\textbf{procedure} \: sum(a_1, a_2 . . . a_n: integers)$ {\tiny Declare a function sum which takes integers as input} \\
+$\textit{sum} := a_1$ {\tiny the variable sum gets the value of $a_1$}\\
+$\textbf{for}$ i := 2 to n {\tiny iterate from the second position in the list to the length of the list} \\
+\setlength\parindent{48pt} sum := sum + $a_i$  {\tiny the variable sum gets the value in sum + the next value in the list}\\
+\setlength\parindent{24pt}$\textbf{return}$ sum {\tiny return the variable sum} \\
+~\\
+
+\setlength\parindent{0pt}6) Describe an algorithm that takes as input a list of $n$ integers and finds the number of negative integers in the list. \\
+~\\
+\setlength\parindent{24pt}$\textbf{procedure} \: negnums(a_1, a_2 . . . a_n: integers)$ {\tiny Declare a function/procedure negnums which takes integers as input} \\
+$\textit{negnums} := 0$ {\tiny initialize a variable called negnums with the value 0 in it - this will be our counter}\\
+$\textbf{for}$ i := 1 to n {\tiny iterate from the first position in the list to the length of the list} \\
+\setlength\parindent{48pt} $\textbf{if}\: a_i$ $< $\:0 $\textbf{then}$ negnums := negnums + 1  {\tiny the variable sum gets the value in sum + the next value in the list}\\
+\setlength\parindent{24pt}$\textbf{return}$ negnums {\tiny return the variable negnums to the functions caller} \\
+~\\
+\setlength\parindent{0pt}11) Describe an algorithm that interchanges the values of the variables $x$ and $y$, using only assignments.  What is the minimum number of assignment statements needed to do this? \\
+~\\
+\setlength\parindent{24pt}$\textbf{procedure} \: swap(x: anytype, y: anytype)$ {\tiny Declare a function/procedure swap which takes any two variables as input} \\
+$\textit{temp} := x$ {\tiny initialize a variable called temp and store the value of x in it.}\\
+$\textit{x} := y$ {\tiny put the value of y in x.}\\
+$\textit{y} := temp$ {\tiny put the value of temp in y.}\\
+~\\
+\setlength\parindent{24pt}It takes at least three steps to swap two variables. \\
+~\\
+\setlength\parindent{0pt}14) List all the steps used to search for 7 in a sequence given in exercise 13 for both a linear search and a binary search. \\
+~\\
+\setlength\parindent{24pt}$\textbf{procedure} \: linear search(x: integer, a_1, a_2 . . . a_n: distinct integers)$ \\
+%{\tiny Declare a function/procedure linear search which takes one integer and a set of distinct integers as input} \\
+$\textit{i} := 1$ {\tiny initialize the variable i to the value 1 - this will be used to iterate over the list}\\
+$\textbf{while}$($i \leq n$ and $x\neq a_i$){\tiny continue the following loop while the value of i is less than the length of the set AND the integer we're looking\\ for is not equal to the current item being iterated over} \\
+\setlength\parindent{48pt} i := i + 1\\
+\setlength\parindent{24pt} $\textbf{if}\: i $ $\leq n$ $\textbf{then}$ location := i  {\tiny if i is less than or equal to n then the variable location gets the value of i}\\
+\setlength\parindent{24pt} $\textbf{else}$ location := 0 {\tiny else location gets the value of 0}\\
+\setlength\parindent{24pt}$\textbf{return}$ location {\tiny return the variable location to the functions caller} \\
+{\tiny *See attached paper for handwritten table breakdown} \\
+~\\
+14 - Binary Search) \\
+~\\
+\setlength\parindent{24pt}$\textbf{procedure} \: binary search(x: integer, a_1, a_2 . . . a_n: increasing integers)$ \\
+%{\tiny Declare a function/procedure linear search which takes one integer and a set of distinct integers as input} \\
+$\textit{i} := 1$ {\tiny initialize the variable i to the value 1 - this represents the first element of the list}\\
+$\textit{j} := n$ {\tiny initialize the variable j to the value n - the length of the list - this represents the last element of the list}\\
+$\textbf{while}$($i < j$){\tiny execute the following loop while i is less then j} \\
+\setlength\parindent{48pt} m := $\lfloor (i + j) /2 \rfloor$ {\tiny take the floor function of i + j divided by 2.  This splits the entire set in half}\\
+\setlength\parindent{48pt} $\textbf{if}$ x $> a_m \: \textbf{then}$ i := m + 1 {\tiny If the value we're looking for is greater then the mid point of the list then the smallest bound of \\the new list is the mid point + 1}\\  
+\setlength\parindent{48pt} $\textbf{else}$ j := m {\tiny if it isn't greater then the midpoint, then the max point of the new list is m, which was the midpoint after the split.}\\
+\setlength\parindent{24pt}$\textbf{if}$ x = $a_i \textbf{then}$ location := i  {\tiny if the value we're looking for equals the last value found after splitting the list to conclusion, then puts the\\ value of the index into location - the index is the location in which the variable occurs in the list. }\\
+\setlength\parindent{24pt}$\textbf{else}$ location := 0 {\tiny else the value wasn't found and location gets the value 0 to signify the value wasn't found} \\
+\setlength\parindent{24pt}$\textbf{return}$ location {\tiny return the variable location to the functions caller} \\
+{\tiny *See attached paper for handwritten table breakdown} \\
+~\\
+\setlength\parindent{0pt}16) Describe an algorithm for finding the smallest integer in a finite sequence of natural numbers. \\
+~\\
+\setlength\parindent{24pt}$\textbf{procedure}$ smallest integer($a_1, a_2 . . . a_n$: natural numbers) {\tiny Declare a procedure/function called smallest integer that takes \\in a finite list of natural numbers}\\
+\setlength\parindent{24pt}\textit{least} := $a_1$ {\tiny least gets the first value in the list}\\
+\setlength\parindent{24pt}$\textbf{for}$ i := 2 $\textbf{to}$ n {\tiny set the variable i to 2 and iterate up to the nth element in the list.}\\
+\setlength\parindent{48pt} $\textbf{if}$ least $>$ $a_i$ $\textbf{then}$ \textit{least} := $a_i$ {\tiny if the value is least is greater than the \\currently iterated item, then least gets the value of the currently iterated item.}\\ 
+\setlength\parindent{24pt} $\textbf{return}$ $\textit{least}$ {\tiny return the variable least to the functions caller} \\
+{\tiny *I chose a linear search algorithm because we don't know if the list is ordered or not.  A list must be ordered to use binary search.}
+
+
+\end{flushleft}
+\end{document}

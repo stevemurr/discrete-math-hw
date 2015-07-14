@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{Test Prep Question}\\
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+\setlength\parindent{0pt}13a) Suppose that a statement of the form $\forall x P(x)$ is false.  How can this be proved? \\
+~\\
+WOULD I SAY SOMETHING LIKE THIS? \\
+Let $P(x) $ be the statement $x + 1 < x$ where the domain consists of natural numbers. \\
+FOR ALL NATURAL NUMBERS ${ 0, 1, 2, 3...}$ there exists no natural number x that when one is added to it, is less then x. \\
+DO I NEED TO CREATE A CASE LIKE THE ABOVE?  OR IS THIS NOT REQUIRED?  IS THE MORE GENERAL ANSWER OF "TO PROVE $\forall x P(x)$ IS FALSE WE JUST NEED TO FIND THAT THERE EXISTS ONE X THAT IS FALSE" PREFERRED?\\
+~\\
+
+\setlength\parindent{0pt}13b) Show that the statement "For every positive integer $n$, $n^2 \geq 2n$ is false.\\
+WOULD I USE SOMETHING LIKE THIS? \\
+I will use a constructive proof to show there exists at least one positive integer that when squared is not greater than or equal to 2 times n.  \\
+If we use 1 for n we get: \\
+$1^2 = 1 \geq 2(1) = 2$.  Since 1 is not greater than or equal to two we have proven that $n^2 \geq 2n$ is false.
+
+\end{flushleft}
+\end{document}

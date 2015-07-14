@@ -1,0 +1,161 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{Class notes}
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+$\sum\limits_{j=1}^k j = \frac{k(k+1)}{2}$ \\
+~\\
+Show $P(k+1)$ is true for: \\
+$\sum\limits_{j=1}^{k+1} j = \frac{(k+1)((k+1)+1)}{2}$ \\
+~\\
+Start with the left side only of the $p(k+1)$ equation and write down something that you know it's equal to. \\
+$\sum\limits_{j=1}^{k+1} j = 1+2+3+...+k+(k+1)$ \\
+~\\
+$\sum\limits_{j=1}^{k+1} j = \frac{k(k+1)}{2} + (k+1)$ \\
+Common denominators - algebra \\
+~\\
+$\frac{k(k+1)}{2} + \frac{2(k+1)}{2}$  = $\frac{k^2+k}{2} + \frac{2k+2}{2}$ \\
+~\\
+Multiply together and factor \\
+~\\
+$\frac{(k+1)(k+2)}{2}$ Which is the right hand of p(k+1) thus it is proved. \\
+~\\
+Why is it important to show the basis step? \\
+~\\
+Prove: $3^n -2$ is even for all(integers) $n \geq 1$ \\
+~\\
+Assume $3^k-2$ is even (Show $3^{k+1}-2$ is even \\
+~\\
+We know $3^k -2 = 2j$ for some integer j \\
+~\\
+$3^k = 2j+2$ \\
+~\\
+$3x3^k = 3(2j+2)$  \\
+~\\
+Inductive inequality proofs \\
+~\\
+Prove: $n^2 \leq n!$ for all integers $n \geq ?$ \\
+~\\
+For example $6! = 6.5.4.3.2.1 = 720$ \\
+~\\
+$0! = 1$ for some reason.\\
+~\\
+Base Case: $1^2 \leq 1!$ is true and $2^2 \leq 2!$ is false \\
+~\\
+Maybe $n=4$ then $4^2 \leq 4!$ which is $16 \leq 24$ \\
+~\\
+Beyond n=4 it starts to diverge even further so 4 as our base case makes sense. \\
+~\\
+$n^2 \leq n!$ for all integers $n \geq 4$\\
+~\\
+Now we most likely want to prove n+1 for all integers $k \geq 4$ \\
+$(k+1)^2  \leq (k+1)!$ \\
+~\\
+Start with left hand side:\\
+~\\
+$k^2 + 2k + 1 \leq k! + 2k + 1$ This can potentially work however, use the following: \\
+~\\
+$k^2 + 2k + 1 \leq k^2 + 2k^2 + 1k^2 = 4k^2$ Use the big O approach where you sub in a $k^2$ for all values and sum them together. \\
+~\\
+$k^2 + 2k + 1 \leq 4k^2$ now we move to: \\
+~\\
+$4k^2 \leq 4 \cdot k!$ \\
+~\\
+$(n+1)! = (n+1) \cdot n!$ \\
+~\\
+$4k^2 \leq (k+1) \cdot k!$ \\
+~\\
+Since $k \geq 4$ then $k+1 \geq 5$ \\
+~\\
+So $4k! \leq 4k! \leq (k+1) k!$ \\ 
+~\\
+Show $2^n \leq n!$ for all $n \geq 4$ \\
+~\\
+Basis Step: 4 so $2^4 \leq 4!$ which is $16 \leq 24$ so base case has been proved. \\ 
+~\\
+Inductive Step: 
+$2^{k+1} \leq (k+1)!$ We want to prove the left side is equal to the right side\\
+~\\
+$2^{k+1} = 2(2^k) \leq 2 \cdot k! \leq (k+1)k! = (k+1)!$ \\
+~\\
+Since $k \geq 4 $ and $ k+1 \geq 4 > 2$ \\
+~\\
+$\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{2^n} = ?$ for all $n \geq 1$ \\
+~\\
+Fill in a formula and prove it by induction. \\
+~\\
+Examples of small values of n:  \\
+n=1 \\
+n=2 \\
+n=3\\
+~\\
+$\frac{1}{2^1} = \frac{1}{2}$ \\
+$\frac{1}{2^1} + \frac{1}{2^2} = \frac{3}{4}$ \\
+$\frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + \frac{1}{2^4} = \frac{15}{16}$ \\
+~\\
+This looks like the equation is $\frac{2^n-1}{2^n}$ \\
+~\\
+$1 - \frac{1}{2^n}$ for $n \geq 1$ \\
+~\\
+Basis Step: $1 - \frac{1}{2^{(1)}} = \frac{1}{2} = 1 - \frac{1}{2}$ \\
+~\\
+Inductive Step: Assume $\frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + \frac{1}{2^4} + \frac{1}{2^{k+1}}= 1 - \frac{1}{2^k+1}$
+~\\
+$\frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + \frac{1}{2^4} + \frac{1}{2^k} + \frac{1}{2^{k+1}}$ \\
+~\\
+$1 - \frac{1}{2^k} + \frac{1}{2^{k+1}} = \frac{1}{2^k \cdot 2} + \frac{1}{2^k+1}$ \\
+~\\
+~\\
+Define $a_1 = 5$ then \\
+$a_{n+1} = 2\cdot a_n$ for all $n \geq 1$ \\
+~\\
+A non-recursive sequence would be $a_n = \frac{n^2}{4}$ \\
+~\\
+2,6,10,14,18 . . . - Pattern seems to be $a_n + 4 = a_{n+1}$ \\
+~\\
+$a_{n+1} = 2\cdot a_n$\\
+Find $a_1,a_2,a_3,a_4$ \\
+$a_1 =5$ \\
+$a_2 = 2 \cdot 5 $ \\
+~\\
+Non-recursive formula: \\
+~\\
+5,10,20,40,80,160,320 \\
+~\\
+$a_n = 10 \cdot 2^n$ for $n \geq -1$ \\
+~\\
+~\\
+
+We say f is a recursive function if $f : N \rightarrow S$ and its defined in two parts. \\
+~\\
+1) $f(0)$ \\
+2) For $n \geq 0, f(n+1)$ is defined in terms of $f(n)$ \\
+~\\
+Specific example: \\ 
+~\\
+Define $f: N \rightarrow N$ \\
+by $f(0) = 1$ \\ 
+and $f(n+1) = (n+1) \cdot f(n) $ for $n \geq 0$ \\
+~\\
+find $f(1), f(2), f(3)$ \\
+$f(0)$ occurs when $n = 0$ \\
+~\\
+Define $f : N \rightarrow Z$ \\
+by $f(0) = -2$ \\
+$f(n+1) = f(n)^2 + 4f(n), for n \geq 0 = [f(n)]^2 + 4f(n)$  \\
+$f(1) = [f(0)]^2 + 4f(0)$\\
+$f(2) = [f(1)]^2 + 4f(1)$\\
+
+\end{flushleft}
+\end{document}

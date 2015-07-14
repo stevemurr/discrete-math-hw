@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 package homework;\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author stevemurr\
+ */\
+public class BinaryToDecimal \{\
+    public static void main(String[] args) \{\
+        Scanner sc = new Scanner(System.in);\
+        System.out.print("Enter the binary string: ");\
+        String x = sc.nextLine();\
+        int sum = 0;\
+        int iter = x.length()-1;\
+        for (int i = 0; i < x.length(); i++)\{\
+            char c = x.charAt(i);\
+            if (c == '1')\{\
+                sum = sum + (int)(Math.pow(2, iter));\
+                iter--;\
+            \} else if (c == '0') \{\
+                sum = sum + 0;\
+                iter--;\
+            \}\
+        \}\
+        System.out.println(sum);\
+    \}\
+\}\
+\
+package homework;\
+\
+import java.util.Scanner;\
+import java.util.ArrayList;\
+\
+/**\
+ *\
+ * @author stevemurr\
+ */\
+public class BinaryConversion \{\
+    public static void main(String[] args) \{\
+        Scanner sc = new Scanner(System.in);\
+        System.out.print("Input the number to convert: ");\
+        int numToConvert = sc.nextInt();\
+        ArrayList<Integer> binaryConversion = new ArrayList();\
+        while (numToConvert != 0) \{\
+            // modulo the number and store that number in arraylist\
+            int modNumber = numToConvert % 2;\
+            binaryConversion.add(0, modNumber);\
+            //divide the number by two and take floor\
+            numToConvert = (int)(Math.floor(numToConvert / 2));\
+        \}\
+        for (int i : binaryConversion)\{\
+            System.out.print(i);\
+        \}\
+        System.out.println();\
+    \}\
+\}\
+\
+}

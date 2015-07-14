@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 6.1} \\
+      \large\textit{Problems = \{ 1-12 all, 17, 28, 64 \} }
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}1)There are 18 mathematics majors and 325 computer science majors at a college. \\
+\setlength\parindent{24pt}a) In how many ways can two representatives be picked so that one is a mathematics major and the \\other is a computer science major? \\
+\setlength\parindent{48pt} We will use the product rule.  $18 \cdot 325 = 5850$ ways \\
+\setlength\parindent{24pt}b) In how many ways can one representative be picked who is either a mathematics major or a \\computer science major? \\
+\setlength\parindent{48pt} We will use the sum rule.  $18+325 = 343$ \\
+~\\
+\setlength\parindent{0pt}2) An office building contains 27 floors and has 37 offices on each floor.  How many offices are in the building? \\
+\setlength\parindent{24pt}We will use the product rule.  $27\cdot 37 = 999$ offices. \\
+~\\
+\setlength\parindent{0pt}3) A multiple-choice test contains 10 questions.  There are four possible answers for each question.  \\
+\setlength\parindent{24pt}a) In how many ways can a student answer the questions on the test if the student answer every \\question? \\
+\setlength\parindent{48pt} $4^10 = 1048576$ ways if the student answer every question. \\
+\setlength\parindent{24pt}b) In how many ways can a student answer the questions on the test if the student can leave answers \\blank? \\
+\setlength\parindent{48pt} Since all questions now have five possible answers $5^10 = 9765625$ \\
+\setlength\parindent{0pt}4) A particular brand of shirt comes in 12 colors, has a male version and a female version, and comes in three sizes for each sex.  How many different types of this shirt are made? \\
+\setlength\parindent{24pt}Colors = 12, mf version = 2, sizes = 6. \\
+\setlength\parindent{24pt}We then use the product rule.  $12 \cdot 2 \cdot 6 = 144$ options. \\
+~\\
+\setlength\parindent{0pt}5) Six different airlines fly from New York to Denver and seven from Denver to San Francisco.  How many different pairs of airlines can you choose on which to book a trip from New York to San Francisco via Denver, when you pick an airline for the flight to Denver and an airline for the continuation flight to San Francisco. \\
+\setlength\parindent{24pt}We use the product rule.  $6 \cdot 7 = 42$ different pairs of airlines. \\
+~\\
+\setlength\parindent{0pt}6) There are four major auto routes from Boston to Detroit and six from Detroit to Los Angeles.  How many major auto routes are there from Boston to Los Angeles via Detroit? \\
+\setlength\parindent{24pt}We will use the product rule.  $4 \cdot 6 = 24$ different routes. \\
+~\\
+\setlength\parindent{0pt}7) How many different three-letter initials can people have? \\
+\setlength\parindent{24pt}This has the following properties: All uppercase (can be lowercase but most people don't mix and match cases with initials), 26 letters in the alphabet, repeats allowed.  With these properties we can use the product rule.  $26^3 = 17576$ \\
+~\\
+\setlength\parindent{0pt}8) How many different three-letter initials with none of the letters repeated can people have? \\
+\setlength\parindent{24pt}This has the following properties: All uppercase, 26 letters in alphabet, no repeats. \\
+\setlength\parindent{24pt}We can use the product rule such as: $26 \cdot 26-1 \cdot 26-2 = 15600$ possibilities. \\
+~\\
+\setlength\parindent{0pt}9) How many different three-letter initials are there that begin with an A? \\
+\setlength\parindent{24pt}This has the following properties: Must begin with A.  Repeats allowed since no repeats wasn't \\explicitly stated. \\
+\setlength\parindent{24pt}$1 \cdot 26 \cdot 26 = 676$ ways. \\
+~\\
+\setlength\parindent{0pt}10) how many bit strings are there of length eight? \\
+\setlength\parindent{24pt}Again we use the product rule: $2^8 = 256$ bit strings with length eight. \\
+~\\
+\setlength\parindent{0pt}11) How many bit strings of length ten both begin and end with a 1? \\ 
+\setlength\parindent{24pt}We use the product rule.  Since we know that the first and last value must be 1 then $2^8 = 256$ possible \\strings. \\
+~\\
+\setlength\parindent{0pt}12) How many bit strings are there of length six or less, not counting the empty string? \\
+\setlength\parindent{24pt} I'm assuming by stating it as "how many bit strings of length six or less not including empty string" \\can mean two things.  It's asking for $2^6 = 64$ or $2^6 - 1 = 63$ as I'm not familiar with needing to count \\the empty string unless all zeros is the empty string$(2^0 = 1$ thus 1 is the value of an empty string).  \\The other possibility is it's asking for $2^6 + 2^5 + 2^4 + 2^3 + 2^2 + 2^1 = 126$ not including $2^0$ because i'm \\assuming that's the empty string.  I have a feeling it's my last answer which is n!.  \\
+~\\
+\setlength\parindent{0pt}17) How many strings of five ASCII characters contain the character @ ("at" sign) at least once? [Note: There are 128 different ASCII characters] \\
+\setlength\parindent{24pt}Here are the properties: string length = 5, 128 ascii chars, @ sign at least once.  \\
+\setlength\parindent{24pt}If we allowed all ascii values for string length five it would be $128^5$.  Since we need to show the \\number of strings in which @ appears at least once we subtract $127^5$ from the previous value.  This \\represents the difference in all @ symbols and no @ symbols.  $128^5 - 127^5 = 1321368961$ \\
+~\\
+\setlength\parindent{0pt}28) How many license plates can be made using either three digits followed by three uppercase English letters or three uppercase English letters followed by three digits.  \\
+\setlength\parindent{24pt}This has the following properties: DDD EEE or EEE DDD, repeats ok, D = 10, E = uppercase \\English letter = 26. \\
+\setlength\parindent{24pt}This appears to be a product rule.  $10 \cdot 10 \cdot 10 \cdot 26 \cdot 26 \cdot 26 = 17576000$ \\
+~\\
+\setlength\parindent{0pt}64) Use a tree diagram to find the number of bit strings of length four with no three consecutive 0's (this is bad english).  Looks to be $2^4 - 1$.  See attached diagram. \\
+ 
+   
+
+\end{flushleft}
+\end{document}

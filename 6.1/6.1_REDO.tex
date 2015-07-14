@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{REDO 6.1} \\
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+\setlength\parindent{0pt}28) How many license plates can be made using either three digits followed by three uppercase English letters or three uppercase English letters followed by three digits.  \\
+\setlength\parindent{24pt}This has the following properties: DDD EEE or EEE DDD, repeats ok, D = 10, E = uppercase \\English letter = 26. \\
+\setlength\parindent{24pt}This appears to be a product rule combined with the sum rule.  $10^3 + 26^3 = 2(18576) = 37152$.  We multiply by two because the two orders are both $10^3 + 26^3$\\
+~\\
+
+
+\end{flushleft}
+\end{document}

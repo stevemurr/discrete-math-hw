@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 6.3} \\
+      \large\textit{ Problems = \{ 2, 3, 4b, 10, 13, 14, 16, 17, 27, 30, 31 \} }
+   \end{flushright} 
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}2) How many different permutations are there of the set $\{a,b,c,d,e,f,g\}$ \\
+\setlength\parindent{24pt} $7!$ or $7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5040$ \\
+~\\
+\setlength\parindent{0pt}3) How many permutations of $\{a,b,c,d,e,f,g\}$ end with a.  \\ 
+\setlength\parindent{24pt} $6!$ or $6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$ \\
+~\\
+\setlength\parindent{0pt}4b) Les S = $\{ 1,2,3,4,5 \}$ \\
+\setlength\parindent{24pt}b) List all the 3 combinations of S. \\
+\setlength\parindent{24pt} P(5,3) = 60 \\
+~\\
+\setlength\parindent{0pt}10) There are six different candidates for the governor of a state.  In how many different orders can the names of the candidates be printed on a ballot? \\
+\setlength\parindent{24pt}$6!$ or $6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$ ways. \\
+~\\
+\setlength\parindent{0pt}13) A group contains n men and n women.  How many ways are there to arrange these people in a row if the men and women alternate? \\
+\setlength\parindent{24pt}It was useful for me to think about the lists separately for a moment.  If I just wanted to find all the possible arrangements of n men it would be $n!$ and similarly for women.  The combinations of those two lists would be $n!^2$.  Additionally there are 2 possible ways to start a row so we multiply $n!^2$ by 2 yielding $2(n!)^2$. \\
+~\\
+\setlength\parindent{0pt}14) In how many ways can a set of two positive integers less than 100 be chosen? \\
+\setlength\parindent{24pt}C(99,2) = 4851. \\
+~\\
+\setlength\parindent{0pt}16) How many subsets with an odd number of elements does a set of 10 elements have? \\
+\setlength\parindent{24pt}C(10, 1) + C(10,3) + C(10,5) + C(10,7) + C(10,9) = 512 subsets. \\
+~\\
+\setlength\parindent{0pt}17) How many subsets with more than two elements does a set with 100 elements have? \\
+\setlength\parindent{24pt}We want to subtract the subsets that have 0,1 or 2 elements:  $2^100 - C(100,0) - C(100,1) - C(100,2) = 2^100 - 1 - 100 - 4950 = 1.2676506e30$ \\
+~\\
+\setlength\parindent{0pt}27) A club has 25 members.  \\
+\setlength\parindent{24pt}a) How many ways are there to choose four members of the club to serve on an executive committee? \\
+\setlength\parindent{48pt} C(25, 4) = 12650 \\
+\setlength\parindent{24pt}b) How many ways are there to choose a president, vice president, secretary and treasurer of the club, where no person can hold more than one office? \\
+\setlength\parindent{48pt} P(25, 4) = 303600 \\
+~\\
+\setlength\parindent{0pt}30) Seven women and nine men are on the faculty in the mathematics department at a school. \\
+\setlength\parindent{24pt}a) How many ways are there to select a committee of five members of the department if at least one woman must be on the committee?\\
+\setlength\parindent{48pt} It's helpful to break this down into two parts.  C(16,5) would be the number of ways to select a committee from all the men and women.  If we subtract the men from this we will have the number of committees with at least one women.  C(16,5) - C(9,5) = 4368 - 126 = 4242.\\
+\setlength\parindent{24pt}b) How many ways are there to select a committee of five members of the department if at least one woman and and at least one man must be on the committee?\\
+\setlength\parindent{48pt} Again we break this down into C(9,5) ways for a committee of men, C(7,5) ways for a committee of woman.  C(16,5) ways including men and women.  Since C(16,5) - C(9,5) finds a committee with at least one woman, if we subtract C(7,5) from that we will have a committee with at least one man and one woman.  C(16,5)-C(9,5)-C(7,5) = 4221 different committees.\\
+~\\
+\setlength\parindent{0pt}31) The English alphabet contains 21 consonants and five vowels.  How many strings of six lowercase letters of the English alphabet contain? \\
+\setlength\parindent{24pt}a) Exactly one vowel? \\
+\setlength\parindent{48pt} We have 5 vowels in 6 possible positions and consonants in every other position.  This becomes $5 \cdot 6 \cdot 21^5 = 122523030$ ways.\\
+\setlength\parindent{24pt}b) exactly two vowels?  \\
+\setlength\parindent{48pt}Same approach.  We can choose the vowels in $5^2$ ways, choose the position in C(6,2) ways and choose the remaining 4 slots with consonants in $21^4$ ways.  Multiply them together for $5^2 \cdot C(6,2) \cdot 21^4 = 72930375$ \\
+\setlength\parindent{24pt}c) At least one vowel?\\
+\setlength\parindent{48pt} All the letters is $26^6$ and all the consonants is $21^6$.  $26^6 - 21^6 = 223149655$ to exclude combinations with no vowels. \\
+\setlength\parindent{24pt}d) At least two vowels? \\
+\setlength\parindent{48pt} We know that exactly one vowel can be found in 122523030 ways and we know that at least one vowel can be found in 223149655 ways.  223149655 - 122523030 = 100626625.
+
+
+\end{flushleft}
+\end{document}

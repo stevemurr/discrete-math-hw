@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{Class Notes 3.12}
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+5.3 Cont. \\
+Ackermans Function \\
+~\\
+It is a two variable recursive function.  Variables used are $m $ and $n$.  It is piece wise defined.\\
+~\\
+$A: N x N \rightarrow N$ \\
+Takes a natural number of pairs and produces one natural number as output \\ 
+Defined by $A(m,n)$ \\
+\begin{align*}
+1) 2n, if m &= 0 \\
+2) 0, if m \geq 1 and n &= 0 \\
+3) 2, if m\geq 1 and n &= 1 \\
+4) A(m-1,A(m, n-1), if m \geq 1, and n \geq 2
+\end{align*}
+Compute ackermans function A(m,n): \\
+a) a(0,6) \\
+Since $m = 0$, then 2(6) thus 12.\\
+b) a(6,0) \\
+Since $n = 0$ then it equals 0 \\
+c) a(6,1) \\
+Since m is greater then one and n is equal to 1 then the answer is 2 \\
+d) a(1, 2) \\
+Since m is greater then or equal to 1 and n is greater then or equal to 2. \\
+A(1-1, A(1, 2,1)) \\
+2(1)
+
+Ackermans function is interesting because of how fast it grows.  \\
+Claim $A(2,5) = 2^65536$ \\
+$A(3,6)$ is even bigger \\
+Used to test compilers for recursion handling because its so big. \\
+
+Proof involving Ackermans function and induction. \\
+Fact(to be proved in HW 5.3) \\
+A(1,n) is always $2^n$.  When n is any natural number. \\
+~\\
+Prove: $A(2, n) = 2^n$ for any integer n $\geq $ 1.\\
+$A(2,5)$ is an example of this. \\
+Notation: \\
+
+We are doing repeated exponentiation not repeated multiplication. \\
+
+\begin{align*}
+
+\end{align*}
+
+\end{flushleft}
+\end{document}

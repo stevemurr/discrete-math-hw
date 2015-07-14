@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 5.1} \\
+      \large\textit{ Problems = \{ 1,3,4,6,9,10,15,18,20,49,57 \} } \\
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+\setlength\parindent{0pt}1) There are infinitely many stations on a train route.  Suppose that the train stops at the first station and suppose that if the train stops at a station, then it stops at the next station.  Show that the train stops at all stations. \\
+\setlength\parindent{24pt} We will prove the train stops at all stations by induction. \\
+\setlength\parindent{48pt} Base Case: P(1) - We know that the train will stop at the first station and we know that if the\\ train stops at a station then it stops at the next station, represented by $k+1$ (Inductive Step).  \\This can be written as: 
+\begin{equation}
+(P(1) \land \forall k(P(k) \rightarrow P(k+1))) \rightarrow \forall n P(n)
+\end{equation} \\
+\setlength\parindent{48pt} Since it is proven that the train stops at the first stop and it is also proven that if the train \\stops at the first stop then it will stop at the next ($k+1$) stop, then we can prove the train will \\stop at infinitely many stations. \\
+~\\
+\setlength\parindent{0pt}3) Let $P(n)$ be the statement that $1^2 + 2^2 + ... + n^2 = n(n+1)(2n+1)/6$ for the positive integer $n$. \\
+\setlength\parindent{24pt}a) What is the statement $P(1)$?
+\begin{align*}
+P(1) &= 1(1+1)(2(1) + 1) / 6 
+\end{align*}
+\setlength\parindent{24pt}b) Show that $P(1)$ is true, completing the basis step of the proof.
+\begin{align*}
+P(1) &= 1(1+1)(2(1) + 1) / 6 \\
+&= 1(2)(3) / 6 = 1 \\
+1^2 &= 1 
+\end{align*}
+\setlength\parindent{24pt}c) What is the inductive hypothesis? \\
+\setlength\parindent{24pt} The inductive hypothesis is the assumption we make that P(k) holds for an arbitrary positive \\integer $k$.   \\
+\setlength\parindent{0pt}d) What do you need to prove in the inductive step? \\
+\setlength\parindent{24pt} In the case of a summation formulae, we need to prove that if P(k) is true, then P(k+1) will be \\true.  \\
+\setlength\parindent{0pt}e) Complete the inductive step, identifying where you use the inductive hypothesis.\\
+\begin{align*}
+1^2 + 2^2 + . . . + n^2 &= (n+1)((n+1)+1)(2(n+1)+1) / 6 \\
+&= (n+1)(n+2)(2(n+1) + 1) / 6 \\
+&= (n+1)(n+2)(2n+3) / 6 \\
+\end{align*}
+We want to show that the original equation is equal to the final above equation.
+\begin{align*}
+1^2 + 2^2 + . . . + n^2 + (n+1)^2 &= n(n+1)(2n+1)/6 \\
+&= n(n+1)(2n+1)/6 + (n+1)^2 \\
+&= \frac{[(n+1)][n(2n+1)]}{6} + \frac{6(n+1)}{6} \\
+&= \frac{(n+1)(2n^2+n+6n+6}{6} \\
+&= \frac{(n+1)(2n^2+7n+6}{6} \\
+&= \frac{(n+1)(n+2)(2n+3)}{6}
+\end{align*}
+\setlength\parindent{0pt}4) Let $P(n)$ be the statement that $1^3 + 2^3 + ... + n^3 = (n(n+1)/2)^2$ for the positive integer n. \\
+\setlength\parindent{0pt}a) What is the statement $P(1)$.
+\begin{align*}
+P(1) &= (1(1+1)/2)^2 \\
+1^3 &= 1^2 
+\end{align*}
+\setlength\parindent{0pt}b) Show that P(1) is true, completing the basis step of the proof.  \\
+\setlength\parindent{24pt} See part a of this question. \\
+\setlength\parindent{0pt}c) What is the inductive hypothesis? 
+\begin{align*}
+&= (k+1(k+1 + 1)/2)^2\\
+\end{align*}
+\setlength\parindent{0pt}d) What do you need to prove in the inductive step? \\
+\begin{align*}
+P(k) &= (\frac{n(n+1)}{2})^2 + (\frac{(n+1)(n+2)}{2})^2 \\
+&= \frac{n^2(n+1)^2}{4} + \frac{4(n+1)^3}{4} \\
+&= \frac{(n+1)^2(n^2 + 4n + 4)}{4}\\
+&= \frac{n+1^2(n+2)(n+2}{4} \\
+&= (\frac{n+1)(n+2)}{2})^2
+\end{align*}
+\setlength\parindent{24pt}We need to show that any arbitrary value k will hold. \\
+
+~\\
+
+~\\
+
+\setlength\parindent{0pt}6) Prove that $1 \cdot 1! + 2 \cdot 2! + ... + n \cdot n! = (n+1)! - 1$ whenever $n$ is a positive integer. \\
+~\\
+~\\
+\setlength\parindent{0pt}9) Find a formula for the sum of the first $n$ even positive integers. \\
+\begin{align*}
+2 + 4 + 6 + ... + 2n &= n(n+1)\\
+Basis Step: 2 &= 1 \cdot (1+1)\\
+2 &= 2 \cdot 1 \\
+Inductive Step: &= k(k+1) +  2k + 2 \\
+Factor: &= (k+1)(k+2)
+\end{align*}
+
+\setlength\parindent{0pt}15) Prove that for every positive integer $n$, \\
+\begin{align*}
+1 \cdot 2 + 2 \cdot 3 + ... + n(n+1) &= n(n+1)(n+2)/3 \\
+Basis Step: P(1) &= 1 \cdot 2 = 1(1+1)(1+2)/3 \\
+Inductive Step: P(k) &= (k+1)(k+2)(k+3)/3 + (k+1)(k+2) \\
+&= (k+1)(k+2)[(k/3)+1] \\
+&= (k+1)(k+2)(k+3)/3
+\end{align*}
+
+\setlength\parindent{0pt}18) Let $P(n)$ be the statement that $n! < n^n$, where n is an integer greater than 1. \\
+\setlength\parindent{0pt}a) What is the statement P(2)? 
+\begin{align*}
+P(2) &= 2! < 2^2 \\
+2 \cdot 1 < 4 
+\end{align*}
+\setlength\parindent{0pt}b) Show that P(2) is true, completing the basis step of the proof. \\
+\setlength\parindent{24pt}See above. \\
+\setlength\parindent{0pt}c) What is the inductive hypothesis?
+\begin{align*}
+(n+1)! < (n+1)^{n+1}
+\end{align*}
+~\\
+
+\setlength\parindent{0pt}20) Prove that $3^n < n!$ if $n$ is an integer greater than 6. \\
+Prove 7 for base case and then prove k+1 while n $>$ 7\\
+~\\
+\setlength\parindent{0pt}49) What is wrong with this "proof" that all horses are the same color? \\
+Let P(n) be the proposition that all the horses in a set of n horses are the same color. \\
+~\\
+Basis Step: Clearly, P(1) is true. \\
+Inductive Step:  Assume that P(k) is true, so that all the horses in any set of k horses are the same color.  Consider any k+1 horses; number these as horses 1,2,3... k, k+1.  Now the first k of these horses all must have the same color, and the last k of these must also have the same color, and the last k of these must also have the same color.  Because the set of the first k horses and the set of the last k horses overlap, all k+1 must be the same color.  This shows that P(k+1) is true and finishes the proof by induction. \\
+\setlength\parindent{24pt}The two sets do not overlap if n+1 = 2.  In fact, the conditional statement $P(1) \rightarrow P(2)$ is false.  \\
+~\\
+\setlength\parindent{0pt}57) use mathematical induction to prove that the derivative of $f(x) = x^n$ equals $nx^{n-1}$ whenever $n$ is a positive integer.  (For the inductive step, use the product rule for derivatives.)  \\
+\setlength\parindent{24pt} Basis Step:  The base cases n = 0 and n =1 are true because the derivative of $x^0$ is 0 and the derivative of $x^1 = x$ is 1.  \\
+Inductive step:  Using the product rule, the inductive hypothesis, and the basis step shows that 
+
+
+\end{flushleft}
+\end{document}

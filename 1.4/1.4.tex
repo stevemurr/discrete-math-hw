@@ -1,0 +1,160 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 1.4}
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+2) Let $P(x)$ be the statement "the word $x$ contains the letter $a$."  What are the truth values? \\
+\setlength\parindent{24pt}a) P(orange) \\
+\setlength\parindent{48pt} True, because the letter a appears in the word "orange." \\
+\setlength\parindent{24pt}b) P(lemon) \\
+\setlength\parindent{48pt} False, because the letter a does not appear in the word lemon. \\
+\setlength\parindent{24pt}c) P(true) \\
+\setlength\parindent{48pt} False, because the letter a does not appear in the world true. \\
+\setlength\parindent{24pt}d) P(false) \\
+\setlength\parindent{48pt} True, because the letter a appears in the word false. \\~\\
+\setlength\parindent{0pt}5) Let $P(x)$ be the statement "x spends more than five hours every weekday in class," where the domain for x consists of all students.  Express each of these quantifications in English.\\
+\setlength\parindent{24pt}a) $\exists x P(x)$ \\
+\setlength\parindent{48pt} "There exists more than one student who spends more than five hours every weekday in class." \\
+\setlength\parindent{24pt}b) $\forall x P(x)$ \\
+\setlength\parindent{48pt} "Every student spends more than five hours every weekday in class." \\
+\setlength\parindent{24pt}c) $\exists \neg P(x)$ \\
+\setlength\parindent{48pt} "Some of the students don't spend more than five hours every weekday in class."\\
+\setlength\parindent{24pt}d) $\forall x \neg P(x)$ \\
+\setlength\parindent{48pt} "Every student doesn't spend more than five hours every weekday in class."\\
+~\\
+\setlength\parindent{0pt}9) Let $P(x)$ be the statement "x can speak Russian" and let $Q(x)$ be the statement "x knows the computer language C++."  Express each of these sentences in terms of $P(x), Q(x)$ ,quantifiers, and logical connectives.  The domain for quantifiers consists of all students at your school.  \\
+\setlength\parindent{24pt}a) There is a student at your school who can speak Russian and who knows C++. \\
+\setlength\parindent{48pt} $\exists x (P(x) \land Q(x))$ \\
+\setlength\parindent{24pt}b) There is a student at your school who can speak Russian but who doesn't know C++.\\
+\setlength\parindent{48pt} $\exists x (P(x) \land \neg (Q(x))$\\
+\setlength\parindent{24pt}c) Every student at your school either can speak Russian or knows C++. \\
+\setlength\parindent{48pt} $\forall x (P(x) \lor Q(x))$ \\
+\setlength\parindent{24pt}d) No student at your school can speak Russian or knows C++. \\
+\setlength\parindent{48pt} $\forall x \neg (P(x) \lor Q(x))$\\
+
+\setlength\parindent{0pt}10) Let $C(x)$ be the statement "x has a cat," let $D(x)$ be the statement "x has a dog," and let $F(x)$ be the statement "x has a ferret."  Express each of these statements in terms of $C(x), D(x), F(x)$, quantifiers, and logical connectives.  Let the domain consist of all students in your class.\\
+\setlength\parindent{24pt}a) A student in your class has a cat, a dog and a ferret. \\
+\setlength\parindent{48pt} $\exists x (C(x) \land D(x) \land F(x))$ \\
+\setlength\parindent{24pt}b) All students in your class have a cat, a dog, or a ferret. \\
+\setlength\parindent{48pt} $\forall x (C(x) \lor D(x) \lor F(x))$ \\
+\setlength\parindent{24pt}c) Some student in your class has a cat and a ferret, but not a dog.  \\
+\setlength\parindent{48pt} $\exists x (C(x) \land \neg D(x) \land F(x))$ \\
+\setlength\parindent{24pt}d) No student in your class has a cat, a dog, and a ferret.\\ 
+\setlength\parindent{48pt} $\forall x \neg (C(x) \land D(x) \land F(x))$\\
+\setlength\parindent{24pt}e) For each of the three animals, cats, dogs and ferrets, there is a student in your class who has this \\
+\setlength\parindent{24pt}animal as a pet.  \\
+\setlength\parindent{48pt} $\exists x (C(x) \lor D(x) \lor F(x))$\\
+~\\\setlength\parindent{0pt}11) Let $P(x)$ be the statement $"x = x^2."$  If the domain consists of the integers, what are these truth values?\\
+\setlength\parindent{24pt}a) P(0) \\
+\setlength\parindent{48pt} True.  $0^2 = 0$ \\
+\setlength\parindent{24pt}b) P(1) \\
+\setlength\parindent{48pt} True.  $1^2 = 1 = 1$ \\
+\setlength\parindent{24pt}c) P(2) \\ 
+\setlength\parindent{48pt} False.  $2^2 = 4 \neq 2$ \\
+\setlength\parindent{24pt}d) P(-1) \\
+\setlength\parindent{48pt} False.  $-1^2 = 1 \neq -1$ \\
+\setlength\parindent{24pt}e) $\exists x P(x)$\\
+\setlength\parindent{48pt} True.  For some integer x there exists an integer when squared, the value of which is equal\\
+\setlength\parindent{48pt}to the integer x. \\
+\setlength\parindent{24pt}f) $\forall x P(x)$ \\
+\setlength\parindent{48pt} False.  For all values of x, some integers are not equal after squaring to the initial value x. \\
+~\\\setlength\parindent{0pt}15) Determine the truth value of each of these statements if the domain for all variables consists of all integers. \\
+\setlength\parindent{24pt}a) $\forall n(n^2 \geq 0)$\\
+\setlength\parindent{48pt} True.  Any integer squared will always be greater than or equal to 0.\\
+\setlength\parindent{24pt}b) $\exists n (n^2 = 2)$ \\
+\setlength\parindent{48pt} False.  There doesn't exist an integer whose value when squared is equal to 2.\\
+\setlength\parindent{24pt}c) $\forall n (n^2 \geq n)$ \\
+\setlength\parindent{48pt}True.  For all integers, when the integer n is squared, it is always greater than the integer n.  \\
+\setlength\parindent{24pt}d) $\exists n (n^2 < 0)$ \\
+\setlength\parindent{48pt} False.  There is no integer n when n is squared is less than 0.\\
+\setlength\parindent{0pt}16) Determine the truth value of each of these statements if the domain of each variable consists of all real numbers.\\
+\setlength\parindent{24pt}a) $\exists x (x^2 = 2)$ \\
+\setlength\parindent{48pt} True.  There exists a real number x that when squared = 2. $\sqrt{2}$ \\
+\setlength\parindent{24pt}b) $\exists x (x^2 = -1)$\\
+\setlength\parindent{48pt} False.  There exists no real number that when squared equals -1. \\
+\setlength\parindent{24pt}c) $\forall x (x^2 +2 \geq 1)$\\
+\setlength\parindent{48pt} True.  For all real numbers, when real number x is squared and 2 added to it, the resulting\\
+\setlength\parindent{48pt} number will always be greater than 1.\\
+\setlength\parindent{24pt}d) $\forall x (x^2 \neq x)$ \\
+\setlength\parindent{48pt} False.  For all real numbers, there exists one number x that when squared is equal to the number 
+\\x. \\
+\setlength\parindent{0pt}32) Express each of these statements using quantifiers.  Then form the negation of the statement so that no negation to the left of a quantifier.  Next, express the negation in simple English.  (Do not simply use the phrase "It is not the case that.")
+\\\setlength\parindent{24pt}a) All dogs have fleas.
+\\\setlength\parindent{48pt} $\forall x D(x)$\setlength\parindent{48pt} 
+\\\setlength\parindent{48pt} Negation: $\exists x \neg D(x)$
+\\\setlength\parindent{48pt} There exists a dog that does not have fleas.
+
+~\\\setlength\parindent{24pt}b) There is a horse that can add.
+\\\setlength\parindent{48pt} $\exists x H(x)$
+\\\setlength\parindent{48pt} Negation: $\exists x \neg H(x)$
+\\\setlength\parindent{48pt} There exists a horse that can not add.
+
+~\\\setlength\parindent{24pt}c) Every koala can climb.
+\\\setlength\parindent{48pt} $\forall x C(x)$
+\\\setlength\parindent{48pt} Negation: $\exists x \neg C(x)$
+\\\setlength\parindent{48pt} There exists a koala that can't climb.
+
+~\\\setlength\parindent{24pt}d) No monkey can speak French.
+\\\setlength\parindent{48pt} $\neg \forall x M(x)$
+\\\setlength\parindent{48pt} Negation: $\exists x M(x)$
+\\\setlength\parindent{48pt} There exists a monkey who can speak French.
+
+~\\\setlength\parindent{24pt}e) There exists a pig that can swim and catch fish.
+\\\setlength\parindent{48pt} $\exists x S(x) \land F(x)$
+\\\setlength\parindent{48pt} Negation: $\exists x \neg S(x) \land \neg F(x)$
+\\\setlength\parindent{48pt} There exists a pig that can not swim and catch fish.
+
+
+~\\
+\setlength\parindent{0pt}51) Show that $\exists x P(x) \land \exists x Q(x)$ and $\exists x(P(x) \land (Q(x))$ are not logically equivalent.\\
+\setlength\parindent{24pt} The same letter is being used to represent variables bound by different quantifiers with scopes that do \\
+not overlap.  Imagine $P(x) =$ "beach is sunny today" and $Q(x) = $"beach is overcast today."  The first \\example reads as "There exists a beach that is sunny today AND there exists a beach that is overcast \\
+today."  While the second statement reads as "There exists a beach that is sunny and overcast."  Since \\the first example uses two different scopes and the second example uses only one, they are not \\logically equivalent.
+
+~\\
+\setlength\parindent{0pt}52) As mentioned in the text, the notation $\exists! x P(x)$ denotes \\
+\setlength\parindent{24pt}"There exists a unique x such that P(x) is true."\\
+\setlength\parindent{0pt}If the domain consists of all integers, what are the truth values of these statements?\\
+\setlength\parindent{24pt}a) $\exists! x (x > 1)$\\
+\setlength\parindent{48pt} False.  There are many integers greater than 1.\\
+
+\setlength\parindent{24pt}b) $\exists! x (x^2 = 1)$\\
+\setlength\parindent{48pt} False.  The integers 1 and negative 1 are both 1 when squared.\\
+\setlength\parindent{24pt}c) $\exists! x (x+3 = 2x)$\\
+\setlength\parindent{48pt} True.  Only positive 1 will satisfy x+3 = 2x.\\
+\setlength\parindent{24pt}d) $\exists! x (x = x +1)$\\
+\setlength\parindent{48pt} False.  There exists no integer x that when 1 is added to it becomes x.\\
+
+
+\setlength\parindent{0pt}60) Let P(x), Q(x), and R(x) be the statements "x is a clear explanation," "x is satisfactory," and "x is an excuse," respectively.  Suppose that the domain for x consists of all English text.  Express each of these statements using quantifiers, logical connectives, and P(x), Q(x), and R(x).\\
+\setlength\parindent{24pt}a) All clear explanations are satisfactory.\\
+\setlength\parindent{48pt} $\forall x P(x) \rightarrow Q(x)$\\
+\setlength\parindent{24pt}b) Some excuses are unsatisfactory.\\
+\setlength\parindent{48pt} $\exists x R(x) \rightarrow \neg Q(x)$ \\
+\setlength\parindent{24pt}c) Some excuses are not clear explanations.\\
+\setlength\parindent{48pt} $\exists x R(x) \rightarrow \neg P(x)$\\
+\setlength\parindent{24pt}d) Does (c) follow from (a) and (b)?\\
+\setlength\parindent{48pt} ...\\
+
+
+
+
+
+
+
+
+
+\end{flushleft}
+\end{document}

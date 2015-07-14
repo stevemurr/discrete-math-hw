@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 6.4} \\
+      \large\textit{ Problems = \{ 1,4,7,8,12,13,15,19 \} }
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}1) Find the expansion of $(x + 4)^4$ \\
+\setlength\parindent{24pt}a) Using combinatorial reasoning, as in Example 1. \\
+\begin{align*}
+(x + y)^4 &= (x+y)(x+y)(x+y)(x+y) = (xx + xy + yx + yy)(xx + xy + yx + yy) \\ 
+&= (xxxx + xxxy + xxyx + xxyy + xyxx + xyxy + xyyx + xyyy + yxxx + yxxy + yxyx + yxyy + yyxx + yyxy + yyyx + yyyy) \\
+&= x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4
+\end{align*} \\
+\setlength\parindent{24pt}b) Using the Binomial Theorem
+\begin{align*}
+&= \sum\limits_{j=0}^4 {4\choose j} x^{4-j}y^j \\
+&= {4 \choose 0} x^4 + {4 \choose 1}x^3y + {4 \choose 2}x^2y^2 + {4 \choose 3}xy^3 + {4 \choose 4}y^4 \\
+&= x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4
+\end{align*}
+\setlength\parindent{0pt}4) Find the coefficient of $x^5y^8$ in $(x+y)^13$ \\
+\setlength\parindent{24pt}$\frac{13!}{5! 8!} = 1287$ \\
+~\\
+\setlength\parindent{0pt}7) What is the coefficient of $x^9$ in $(2 - x)^{19}$ \\
+\setlength\parindent{24pt} $-1^9 2^{10} {19 \choose 9} = -94595072$ \\
+~\\
+\setlength\parindent{0pt}8) What is the coefficient of $x^8y^9 $in the expansion of $(3x + 2y)^{17}$ \\
+\setlength\parindent{24pt}$3^82^9 {17 \choose 9} = 8.1666e10$ \\
+~\\
+\setlength\parindent{0pt}12) The row of Pascal's triangle containing the binomial coefficients ${10 \choose k}, 0 \leq k \leq 10$ is: \\
+1 10 45 120 210 252 210 120 45 10 1 \\
+Use Pascal's identity to produce the row immediately following this row in Pascal's triangle. \\
+~\\
+*See attached sheet. \\
+~\\
+\setlength\parindent{0pt}13) What is the row of Pascal's triangle containing the binomial coefficients ${9 \choose k} 0 \leq k \leq 9$ \\
+\setlength\parindent{24pt} *See attached sheet \\
+~\\
+\setlength\parindent{0pt}15) Show that ${n \choose k} \leq 2^n$ for all positive integers n and all integers k with $0 \leq k \leq n$\\
+\setlength\parindent{24pt} A set with n elements has a total of $2^n$ different subsets.  Each subset has zero elements, one element to n elements in it.  There are ${n \choose 0} $subsets with zero elements, ${n \choose 1}$ subsets with one element, $n \choose 2$ subsets with two elements and $n \choose n$ subsets with n elements.  Therefore, $n \choose k \leq 2^n$.  \\
+~\\
+\setlength\parindent{0pt}19) Prove Pascal's identity, using the formula $n \choose r$. \\
+\setlength\parindent{24pt}*See attached sheet.
+
+\end{flushleft}
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 8.1} \\
+      \large\textit{ Problems =  \{ 1, 11, 12, 19\} }
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+\setlength\parindent{0pt}1) Use mathematical induction to verify the formula derived in Example 2 for the number of moves required to complete the Tower of Hanoi puzzle.\\
+Basis Step: n = 1 \\
+$2^1 - 1$ = 1.  Since a tower of hanoi of size one is solved in 1 move, the basis step is proved. \\
+Inductive Step:\\
+1) This can be modeled as $2H_n +1$.  
+Since $2^n-1$ solves for the value of n, we can plug this value into n which becomes: \\
+$2(2^n-1)$ \\
+It follows that $2(2^{n}-1) +1 = 2^{n+1}-1$ \\
+~\\
+\setlength\parindent{0pt}11) Find the recurrance relation for the number of ways to climb n stairs if the person climbing the stairs can take one stair or two stairs+14084206901 at a time. \\
+\setlength\parindent{24pt} You gave a hint in your lecture about a stair problem being similar to the fibonacci sequence so i am \\going to say: \\
+\setlength\parindent{48pt} $a_n = a_{n-1} + a_{n-2} $ where $n \geq 2$. \\
+\setlength\parindent{24pt}b) What are the initial conditions?  Since n has to be greater than or equal to 2 for this to start we \\need to define the first two steps.  \\
+\setlength\parindent{24pt}$a_0 = 1, a_1 = 1$. \\
+\setlength\parindent{24pt}c) How many ways can this person climb a flight of eight stairs? \\
+\setlength\parindent{24pt}1, 1, 2, 3, 5, 8, 13, 21, 34.  --- 34 different ways. \\
+~\\
+\setlength\parindent{0pt}12) Find a recurrence relation for the number of ways to climb n stairs if the person climbing the stairs can take one, two, or three stairs at a time. \\ 
+\setlength\parindent{24pt}a) I smell a gotcha however I am going to say it's: \\
+\setlength\parindent{24pt} $ a_n = a_{n-1} + a_{n-2} + a_{n-3} $ where $n \geq 3$. \\
+\setlength\parindent{24pt}b) What are the initial conditions?  Since we can take a maximum of three steps, it's a fibonacci \\sequence but adding the three prior values. \\ 
+$a_0 = 1, a_1 = 1, a_2 = 3$ \\ 
+\setlength\parindent{24pt}c) In how many ways can this person climb a flight of eight stairs?  \\
+If $a_0 = 1, a_1 = 1, a_2 = 3$ we have \\
+$a_3 = 1+1+2 = 4$ \\
+$a_4 = 1+2+4 = 7$ \\
+$a_5 = 2+4+7 = 13$ \\
+$a_6 = 4+7+13 = 24$ \\
+$a_7 = 7+13+24 = 44$ \\
+$a_8 = 13+24+44 = 81$ \\
+81 ways. \\
+~\\
+\setlength\parindent{0pt}19) Messages are transmitted over a communications channel using two signals.  The transmittal of one signal requires 1 microsecond, and the transmittal of the other signal requires 2 microseconds. \\ 
+a) Find the recurrence relation for the number of different messages consisting of sequences of these two signals, where each signal in the message is immediately followed by the next signal, that can be sent in n microseconds. \\ 
+\setlength\parindent{24pt}This seems exactly like the ladder problem.  I will model it as such: \\
+The recurrence relation would be modeled as $a_n = a_{n-1} + a_{n-2}$ where $n \geq 2$.  \\
+\setlength\parindent{24pt}b) What are the initial conditions? \\
+\setlength\parindent{24pt}$a_0 = 1, a_1 = 1$ \\
+\setlength\parindent{24pt}c) How many different messages can be sent in 10 microseconds using these two signals? \\
+\setlength\parindent{24pt} $ 1,1,2,3,5,8,13,21,34,55, 89$.  89 ways.
+
+
+
+
+
+
+
+
+
+
+
+
+\end{flushleft}
+\end{document}

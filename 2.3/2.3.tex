@@ -1,0 +1,148 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{mathtools}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 2.3} \\
+      \large\textit{Problems = \{ 1, 2, 4, 9 - 13 all, 21, 22, 30, 38 \}} \\
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+\setlength\parindent{0pt}1) Why is $f$ not a function from $\textbf{R}$ to $\textbf{R}$ if: \\
+\setlength\parindent{24pt}a) $f(x) = 1/x ?$ \\
+\setlength\parindent{48pt} $f(x) = 1/x$ is not a function because 0 will make the function undefined.  \\For every input, a function should have one output.\\
+\setlength\parindent{24pt}b) $f(x) = \sqrt{x}?$ \\
+\setlength\parindent{48pt} Suppose x = -2.  $\sqrt{-2} = \pm 2$.  Functions can not have multiple outputs for one input.  \\
+\setlength\parindent{24pt}c) $f(x) = \pm \sqrt{x^2 + 1}$ \\
+\setlength\parindent{48pt} Given any real number, the output will be $\pm$.  \\Functions can not have multiple outputs for one input. \\
+
+~\\
+\setlength\parindent{0pt}2) Determine whether $f$ is a function from $\textbf{Z}$ to $\textbf{R}$ if: \\
+\setlength\parindent{24pt}a) $f(n) = \pm n$ \\
+\setlength\parindent{48pt} $f$ is not a function because for every $n$ we will have two outputs as seen by $\pm n$. \\
+\setlength\parindent{48pt} Functions can not have multiple outputs for one input. \\
+\setlength\parindent{24pt}b) $f(n) = \sqrt{n^2 + 1}$ \\
+\setlength\parindent{48pt} Suppose $n = -2$ then $\sqrt{-2^2 + 1} = \sqrt{5}$ \\
+\setlength\parindent{48pt} Suppose $n = 2$ then $\sqrt{2^2 + 1} = \sqrt{5}$ \\
+\setlength\parindent{48pt} Since every input has one input it is a function, even though we have proven it is not one-to-one. \\
+\setlength\parindent{24pt}c) $f(n) = 1/(n^2 - 4)$ \\
+\setlength\parindent{48pt} Suppose $n = 2$.  $f(2) = 1/(2^2 - 4)$ \\
+\setlength\parindent{48pt} At $f(2)$ the function is undefined.  For every input, a function must have one output.  \\In the case of $f(2)$ the function returns nothing thus it is not a function. \\
+
+~\\
+\setlength\parindent{0pt}4) Find the domain and range of these functions.  Note that in each case, to find the domain, determine the set of elements assigned values by the function. \\
+\setlength\parindent{24pt}a) The function that assigns to each nonnegative integer, its last digit. \\
+\setlength\parindent{48pt} Domain = $\textbf{Z}+$ \\
+\setlength\parindent{48pt} Range = \{ 0,1,2,3,4,5,6,7,8,9 \} \\
+ \setlength\parindent{24pt}b) The function that assigns the next largest integer to a positive integer. \\
+ \setlength\parindent{48pt} Domain = $\textbf{N}$ \\
+ \setlength\parindent{48pt} Range = $\textbf{N}$ \\
+ \setlength\parindent{24pt}c) The function that assigns to a bit string the number of one bits in the string. \\
+ \setlength\parindent{48pt} Domain = $\textbf{Z}+$ \\
+ \setlength\parindent{48pt} Range = 0 to n, where n is the length of the bit string. \\
+ \setlength\parindent{24pt}d) The function that assigns to a bit string the number of bits in the string. \\
+ \setlength\parindent{48pt} Domain = $\textbf{Z}+$ \\
+ \setlength\parindent{48pt} Range = 0 to n, where n is the length of the bit string. \\
+ 
+ ~\\
+ \setlength\parindent{0pt}9) Find these values. \\
+ \setlength\parindent{24pt}a) $\lceil \frac{3}{4} \rceil$ = 1 \\
+ \setlength\parindent{24pt}b) $\lfloor \frac{7}{8} \rfloor$ = 1 \\
+ \setlength\parindent{24pt}c) $\lceil -\frac{3}{4} \rceil$ = 0 \\
+ \setlength\parindent{24pt}d) $\lfloor -\frac{7}{8} \rfloor$ = -1 \\
+ \setlength\parindent{24pt}e) $\lceil 3 \rceil$ = 3 \\
+ \setlength\parindent{24pt}f) $\lfloor -1 \rfloor$ = -1 \\
+ \setlength\parindent{24pt}g) $\lfloor \frac{1}{2} + \lceil \frac{3}{2} \rceil \rfloor$ = 2 \\
+ \setlength\parindent{24pt}h) $\lfloor \frac{1}{2} x \lfloor \frac{5}{2} \rfloor \rfloor$ = 1 \\
+ 
+ ~\\
+ \setlength\parindent{0pt}10) Determine whether each of these functions from \{a,b,c,d\} to itself is one-to-one. \\
+ \setlength\parindent{24pt}a) $f(a) = b, f(b) = a, f(c) = c, f(d) = d$ \\
+ \setlength\parindent{48pt} This function is one to one because each input has a unique output. \\
+ \setlength\parindent{24pt}b) $f(a) = b, f(b) = b, f(c) = d, f(d) = c$ \\
+ \setlength\parindent{48pt} This function is not one to one because a and b both go to b. \\
+ \setlength\parindent{24pt}c) $f(a) = d, f(b) = b, f(c) = c, f(d) = d$ \\
+ \setlength\parindent{48pt} This function is not one to one because both a and d go to d. \\
+ ~\\
+ \setlength\parindent{0pt}11) Which functions in Exercise 10 are onto? \\
+ \setlength\parindent{24pt} a) $f(a) = b, f(b) = a, f(c) = c, f(d) = d$ is the only function that is onto.  Because every possibly output is used. \\
+ 
+ ~\\
+ \setlength\parindent{0pt}12) Determine whether each of these functions from $\textbf{Z}$ to $\textbf{Z}$ is one-to-one. \\
+ \setlength\parindent{24pt}a) $f(n) = n - 1$ \\
+ \setlength\parindent{48pt} This function is one-to-one because for every input n will return a unique output. \\
+ \setlength\parindent{24pt}b) $f(n) = n^2 + 1$ \\
+ \setlength\parindent{48pt} This is not one-to-one.  Suppose n = -2 and 2.  4+1 = 5 and 4+1 = 5.  \\Multiple inputs have the same output. \\
+ \setlength\parindent{24pt}c) $f(n) = n^3$ \\
+ \setlength\parindent{48pt} This is one-to-one because for every input n will return a unique output.  This is since \\it's a cube, negative numbers will remain negative output.\\
+ \setlength\parindent{24pt}d) $f(n) = \lceil \frac{n}{2} \rceil$ \\
+ \setlength\parindent{48pt} This is not one-to-one.  Suppose n = 1.  The result of the ceiling function would modify $\frac{1}{2}$ to 1.  \\Suppose n = 2.  This would result in $\frac{2}{2}$ which reduces to 1. \\
+
+ ~\\
+ \setlength\parindent{0pt}13) Which functions in Exercise 12 are onto? \\
+ \setlength\parindent{48pt} $f(n) = n - 1$ is onto because it can potentially utilize every possible output integer.  \\Whereas b can never have the output of 3.  Similarly, function c can never have \\the output values of 2, 4, 5, 6 as an example.  \\
+ \setlength\parindent{48pt} $f(n) = \lceil \frac{n}{2} \rceil$ is also onto because even though some outputs are reused, as shown in the \\previous example, all integers are possible in the output.  \\
+~\\
+\setlength\parindent{0pt}21) Give an explicit formula for a function from the set of integers to the set of positive integers that is: \\
+\setlength\parindent{24pt}a) One-to-one, but not onto. \\
+\setlength\parindent{48pt} $f(n) = n^2$.  All input values will map to unique outputs given the domain and codomain being \\integers.  It will also not be onto because some outputs will be unused, like 2,3, etc. \\  
+\setlength\parindent{24pt}b) Onto, but not one-to-one. \\
+\setlength\parindent{48pt} $f(n) = \mid n \mid + 1$.  This can potentially map to all possibly output values however multiple inputs \\will map to same outputs like, -2 and 2.  \\
+\setlength\parindent{24pt}c) One-to-one and onto. \\
+\setlength\parindent{48pt} $f(n) = 2n+1$.  This is one-to-one and onto because every possible output value can be used \\and each input value maps to a unique output. \\
+\setlength\parindent{24pt}d) Neither one-to-one nor onto. \\
+\setlength\parindent{48pt} $f(n) = n^2 + 1$.  This is not one-to-one because 2 and -2 will map to the same output value.  It is \\not onto because some output values will be unused such as 3.\\
+~\\
+\setlength\parindent{0pt}22) Determine whether each of these functions is a bijection from $\textbf{R}$ to $\textbf{R}$ \\
+\setlength\parindent{24pt}a) $f(x) = -3x + 4$ \\
+\setlength\parindent{48pt} This is a bijection.  All input values will map to unique outputs and all possible output values \\can be used. \\
+\setlength\parindent{24pt}$f(x) = -3x^2 + 4$ \\
+\setlength\parindent{48pt} This is not a bijection because some input values will map to the same outputs.  Suppose \\1 and -1, due to the squaring, the result will always be positive.  \\
+\setlength\parindent{24pt}c) $f(x) = \frac{x+1}{x+2}$ \\
+\setlength\parindent{48pt} This is not a bijection.  Suppose x = -2, the function will be undefined.  \\
+\setlength\parindent{24pt}d) $f(x) = x^5 + 1$ \\
+\setlength\parindent{48pt} After graphing the function, we observe that this is a bijection.  \\
+~\\
+\setlength\parindent{0pt}30) Let $S = \{ -1, 0, 2, 4, 7 \}$.  Find $f(S) $ if \\
+\setlength\parindent{24pt} a) $f(x) = 1$ \\
+\setlength\parindent{48pt} Since $f(x) = 1$ all inputs values will return 1, thus f(S) = \{ 1 \}\\
+\setlength\parindent{24pt} b) $f(x) = 2x + 1$ \\
+\setlength\parindent{48pt} 2(-1) + 1 = -1 \\
+\setlength\parindent{48pt} 2(0) + 1 = 1 \\
+\setlength\parindent{48pt} 2(2) + 1 = 5 \\
+\setlength\parindent{48pt} 2(4) + 1 = 9 \\
+\setlength\parindent{48pt} 2(7) + 1 = 15 \\ 
+\setlength\parindent{48pt} Thus, $f(S) = \{ -1, 1, 5, 9, 15 \}$ \\
+\setlength\parindent{24pt}c) $f(x) = \lceil \frac{x}{5} \rceil$ \\
+\setlength\parindent{48pt} $\lceil \frac{-1}{5} \rceil = 0$ \\
+\setlength\parindent{48pt} $\lceil \frac{0}{5} \rceil = 0$ \\
+\setlength\parindent{48pt} $\lceil \frac{2}{5} \rceil = 1$ \\
+\setlength\parindent{48pt} $\lceil \frac{4}{5} \rceil = 1$ \\ 
+\setlength\parindent{48pt} $\lceil \frac{7}{5} \rceil = 2$ \\
+\setlength\parindent{48pt} Thus, $f(S) = \{ 0, 1, 2 \}$ \\
+~\\
+\setlength\parindent{0pt}38) Let $f(x) = ax + b$ and $g(x) = cx + d$, where a, b, c, and d are constants.  Determine necessary and sufficient conditions on the constants a, b, c, and d so that $f \circ g = g \circ f$\\
+\setlength\parindent{24pt}We will solve this algebraicly by showing that $f(g(x)) = g(f(x))$ \\
+\setlength\parindent{24pt}$f(g(x)) = a(cx+d) + b$ \\
+\setlength\parindent{24pt}$acx +ad + b$ then factor. \\
+\setlength\parindent{24pt}$(ac)x +ad + b$ \\
+\setlength\parindent{24pt}$c(ax+b) + d$ \\
+\setlength\parindent{24pt}$cax + cb + d$ \\
+\setlength\parindent{24pt}$(ac)x + cb + d$ \\
+\setlength\parindent{24pt}Since the coefficient of x is equal in both, we are looking for the value of the constants a, b, c and d to \\be equal such that $ad + b =  cb + d$
+
+
+
+ 
+ 
+\end{flushleft}
+\end{document}

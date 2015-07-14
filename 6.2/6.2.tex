@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 6.2} \\
+      \large\textit{ Problems = \{ 1-5 all, 9, 31, 32, 35 \} } 
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}1) Show that in any set of six classes, each meeting regularly once a week on a particular day of the week, there must be two that meet on the same day, assuming that no classes are held on weekends. \\
+\setlength\parindent{24pt} This problem has the properties: 6 classes - elements, 5 days - objects, there must be \\2 on the same day - show this. \\
+\setlength\parindent{24pt}We use the equation $\lceil \frac{N}{k} \rceil \leq S$.  With our problem this is modeled as: $\lceil \frac{6}{5} \leq 2 \rceil$.  6 / 5 = 1.2 and the \\ceiling of that is 2.  Therefore we have shown that at least 2 classes occur on the same day. \\
+~\\
+\setlength\parindent{0pt}2) Show that if there are 30 students in a class, then at least two have the last names that begin with the same letter. \\
+\setlength\parindent{24pt}This has the following properties: 30 students - elements, 26 - boxes, 2 - have same letters. \\
+\setlength\parindent{24pt}We model this problem with $\lceil \frac{N}{k} \rceil \leq S$.  With our problem we $\lceil \frac{30}{26} \leq 2 \rceil$.  30/26 is 1.15, the ceiling of \\which is 2 thus proving our inequality and that at least 2 kids have a last name starting with the same \\letter. \\
+~\\
+\setlength\parindent{0pt}3) A drawer contains a dozen brown socks and a dozen black socks, all unmatched.  A man takes socks out at random in the dark. \\
+\setlength\parindent{24pt}a) How many socks must he take out to be sure that he has at least two socks of the same color? \\
+\setlength\parindent{48pt} This has the following properties - 2 types of socks, needs 2 socks of same color.  \\
+\setlength\parindent{48pt} We show this as the inequality $\lceil \frac{N}{2} \geq 2 \rceil$.  We know that there are 2 types of socks which is \\modeled by k and we know that S can be 2 socks of the same color.  We set the inequality such \\that $1 \leq \lceil \frac{N}{2} \geq 2 \rceil$.  We then multiply both sides by 2 and add one to left yielding 3.  \\At least 3 socks are required.  \\
+\setlength\parindent{24pt}b) How many socks must he take out to be sure that he has at least two black socks? \\
+\setlength\parindent{48pt} Double the type or box + 1.  In this case this is 2*2 + 1 or 5 socks to guarantee pulling two \\black socks. \\
+~\\
+\setlength\parindent{0pt}4) A bowl contains 10 red balls and 10 blue balls.  A woman selects balls at random without looking at them. \\
+\setlength\parindent{24pt}a) How many balls must she select to be sure of having at least three balls of the same color? \\
+\setlength\parindent{48pt} We set this up as: $2 \leq \lceil \frac{N}{2} \geq 3 \rceil$.  We multiply both sides by 2 and add 1 and get 5.  5 is the least \\number of balls she must draw to guarantee there of the same type. \\
+\setlength\parindent{24pt}b) How many balls must she select to be sure of having at least three blue balls? \\
+\setlength\parindent{48pt} The book says this type of problem is harder to model with the pigeon hole principal but you \\must account for selecting all 10 red balls before selecting any blue balls.  So 10 + 3 = 13 pulls to \\guarantee having 3 blue balls. \\
+~\\
+\setlength\parindent{0pt}5) Show that among any group of five (not necessarily consecutive) integers, there are two with the same remainder when divided by 4. \\
+\setlength\parindent{24pt}If we divide any integer by 4 there are 4 possible remainders.  \\As shown by: $1 /\ 4 = .25, 2 /\ 4 = .5, 3 /\ 4 = .75, 4 /\ 4 = 1, 5 /\ 4 = 1.25.$  Since there are 4 possible \\remainders the pigeon hole theorem tells us that k + 1, where k is boxes, elements are required to \\guarantee two integers of the same remainder are found.  \\
+~\\
+\setlength\parindent{0pt}9) What is the minimum number of students, each of whom comes from one of the 50 states, who must be enrolled in a university to guarantee that there are at least 100 who come from the same state? \\
+\setlength\parindent{24pt}We model this with pigeon hole theorem as: $99 \leq \lceil \frac{N}{50} \rceil \leq 100$.  We multiply both sides by 100 causing \\99 to become 4950.  4950 +1 = 4951 minimum number of students to have 100 from the same state \\attending the same university. \\
+~\\
+\setlength\parindent{0pt}31) Show that there are at least six people in California (population: 37 million) with the same three initials who were born on the same day of the year.  Assume that everyone has three initials.  \\
+\setlength\parindent{24pt} The minimum required to guarantee the same three initials is $26 \cdot 26 \cdot 26 = 17576$.  We multiply that \\by 365+1, yielding 6432816.  Since we know that there are 37 million in California we can model this \\as: $\lceil \frac{37000000}{6432816} \rceil \leq 6$.  The minimum of 6 has been verified.\\
+~\\
+\setlength\parindent{0pt}32) Show that if there are 100,000,000 wage earners in the United States who earn less than 1,000,000 dollars (but at least a penny), then there are two who earned exactly the same amount of money, to the penny, last year. \\
+\setlength\parindent{24pt}I found while doing this problem it was crucial to note "to the penny."  \\
+\setlength\parindent{24pt}Properties of this problem: Less than 1,000,000 million is 9,999,999.99 dollars.  Which 99,999,999 in \\pennies.  We then plug this into our pigeon hole equation: \\
+$\lceil \frac{100,000,000}{99,999,999} \rceil \leq 2$.  The ceiling of the amount is 2 thus proving at least two people made the exact same \\down to the penny. \\
+~\\
+\setlength\parindent{0pt}35) There are 38 different time periods during which classes at a university can be scheduled.  If there are 677 different classes, how many different rooms will be needed? \\
+\setlength\parindent{24pt} We can model this with the pigeon hole theorem: \\
+\setlength\parindent{48pt} $\lceil \frac{677}{38} \rceil = 18$.  18 rooms are required. \\
+
+
+
+
+
+
+
+
+
+
+
+\end{flushleft}
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{3.2 REDO - 2} \\
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+
+\setlength\parindent{0pt}10) Show that $x^3 is O(x^4)$ but that $x^4$ is not $O(x^3)$ \\
+\setlength\parindent{24pt} The definition for Big-O notation is $| f(x) | \leq C | g(x) |$ \\
+\setlength\parindent{48pt} $x^3$ is $O(x^4)$ \\
+As x grows without bound, $x^3$ will always be less than or equal to $x^4$. \\
+However, $x^4$ is not $O(x^3)$ because: 
+\begin{align*}
+x^4 &\leq Cx^3 \\
+\frac{x^4}{x^3} &\leq C\frac{x^3}{x^3} - divide \\
+\frac{x^1}{1} &\leq C
+\end{align*}
+Since x grows without bound and C is a constant x will not always be less than or equal to C. \\
+~\\
+\setlength\parindent{0pt}21) Arrange the functions $\sqrt{n}, 1000logn, nlogn, 2n!, 2^n, 3^n$ and $n^2 / 1,000,000$ in a list so that each function is big-O of the next function. \\
+\setlength\parindent{24pt} $\frac{n^2}{1,000,000} < \sqrt{n} < xlog(x) < 2^x < 2x! < 3^x < 1000log(x) $ \\
+~\\
+\setlength\parindent{0pt}22) Arrange the functions $(1.5)^n, n^{100}, (long)^3, \sqrt{n}logn, 10^n, (n!)^2, $ and $n^{99} + n^{98}$ in a list so that each function is big-O of the next function. \\
+\setlength\parindent{24pt} $(logx)^3 < \sqrt{x} log x < x^{98} + x^{99} < x^{100} < (1.5)^x  < 10^x < (x!)^2$ \\
+~\\
+\setlength\parindent{0pt}26) Give a big-O estimate for each of these functions.  For the function $g$ in your estimate $f(x)$ is $O(g(x))$, use a simple function $g$ of smallest order. \\
+\setlength\parindent{24pt}a) $(n^3 + n^2logn)(logn + 1) + (17logn+19)(n^3 + 2)$ \\
+\setlength\parindent{48pt} $O(n^3\:logn)$ \\
+\setlength\parindent{24pt}b) $(2^n + n^2)(n^3 + 3^n)$ \\
+\setlength\parindent{48pt} Since $2^n$ is the maximum Big O for $2^n + n^2$ and $3^n$ is the maximum Big O for $n^3 + 3^n$ \\we get $3^n2^n$ which simplifies to $6^n$.
+
+
+
+
+
+
+
+\end{flushleft}
+\end{document}

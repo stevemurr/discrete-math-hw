@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 10.1} \\
+      \large\textit{Problems = \{ 1 - 5 all, 14, 15, 16, 18, 19, 20, 21, 32, 33\} }
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}1) Draw graph models, stating the type of graph (from Table 1) used, to represent airline routes where every day there are four flights from Boston to Newark, two flight from Newark to Boston, three flights from Newark to Miami, two flights from Miami to Newark, one flight from Newark to Detroit, two flights from Detroit to Newark, three flights from Newark to Washington, two flights from Washington to Newark, and one flight from Washington to Miami, with: \\
+~\\
+** I feel like there is a lot of room for interpretation with the way the following problems are worded which makes it difficult to pick what is "right" because multiple graphs could satisfy these requisites.  Maybe that's the point and why there is ambiguity in the wording?  \\
+~\\
+** See attached paper. \\
+~\\
+\setlength\parindent{0pt}2) What kind of graph (from Table 1) can be used to model a highway system between major cities where: \\
+~\\
+a) There is an edge between the vertices representing cities if there is an interstate highway between them? \\
+Simple Graph - No multiple edges, No loop, Undirected \\
+~\\
+b) There is an edge between the vertices representing cities for each interstate highway between them? \\
+Directed Multigraph - Multiple edges allowed, directed.\\
+~\\
+c) There is an edge between the vertices representing cities for each interstate highway between them, and there is a loop at a vertex representing a city if there is an interstate highway that circles this city? \\
+Directed Multigraph - Multiple edges allowed ("for each interstate highway between them"), loops allowed("and there is a loop at the vertex representing a city"), directed because I'm assuming by enumerating the highways with "for each" then we will need to distinguish them by direction. \\
+~\\
+\setlength\parindent{0pt}For exercises 3 - 9, determine whether the graph shown has directed or undirected edges, whether it has multiple edges, and whether it has one or more loops.  Use your answers to determine the type of graph. \\
+~\\
+3) Undirected - no multiple edges - no loops - Simple graph \\
+~\\
+4) Undirected - multiple edges - no loops - Multigraph \\
+~\\
+5) Undirected - multiple edges - loops - Psuedograph \\
+~\\
+14) Use the niche overlap graph in Figure 11 to determine the species that compete with hawks. \\
+In a niche overlap graph, animals connected by an edge compete therefore, Raccoons, Owls and Crows all compete with the Hawk.  \\
+~\\
+15) Construct a niche overlap graph for six species of birds, where the hermit thrush competes with the robing and with the blue jay, the robing also competes with the mockingbird, the mockingbird also competes with the blue jay, and the nuthatch competes with the hairy woodpecker. \\
+**See attached paper.\\
+~\\
+16) Draw the acquaintanceship graph that represents that Tom and Patricia, Tom and Hope, Tom and Sandy, Tom and Amy, Tom and Marika, Jeff and Patricia, Jeff and Mary, Patricia and Hopoe, Amy and Hope, and Amy and Marika know each other, but none of the other pairs of people lsited know each other. \\
+~\\
+**See attached paper. \\
+~\\
+18) Who can influence Fred and whom can Fred influence in the influence graph in Example 2? \\
+Deborah and Yvonne can directly influence Fred. \\
+Fred can only directly influence Brian. \\
+~\\
+19) Construct an influence graph for the board members of a company if the President can influence the Director of Research and Development, the Director of Marketing, and the Director of Operations; the Director of Research and Development can influence the Director of Operations; the Director of Marketing can influence the Director of Operations; and no one can influence, or be influenced by the Chief Financial Officer. \\
+~\\
+**See attached paper. \\
+~\\
+20) Which other teams did Team 4 beat and which teams beat Team 4 in the round-robin tournament represent by the graph in Figure 13? \\
+Team 4 beat: Team 3 \\
+Team 4 was defeated by: Teams 1, 2, 5 and 6 \\
+~\\
+21) In a round-robin tournament the Tigers beat the Blue Jays, the Tigers beat the Cardinals, the Tigers beat the Orioles, the Blue Jays beat the Cardinals, the Blue Jays beat the Orioles, and the Cardinals beat the Orioles.  Model this outcome with a directed graph. \\
+~\\
+**See attached paper. \\
+~\\
+32) Which statements must be executed before $S_6$ is executed in the program in Example 8? (use the precedence graph in Figure 10.) \\
+$S_1, S_2, S_3, S_4$ \\
+~\\
+33) Construct a precedence graph for the following program: 
+\begin{align*}
+S_1: x :&= 0 \\
+S_2: x :&= x+1 \\
+S_3: y :&= 2 \\
+S_4: z :&= y \\
+S_5: x :&= x + 2 \\
+S_6: y :&= x + z \\
+S_7: z :&= 4
+\end{align*}
+**See attached sheet. \\
+
+\end{flushleft}
+\end{document}

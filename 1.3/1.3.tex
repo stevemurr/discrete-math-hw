@@ -1,0 +1,387 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 1.3}
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\marginpar{\setlength\parindent{0pt}}2) Show that $p$ and $\neg(\neg p)$ are logically equivalent.
+\begin{displaymath}
+\begin{array} {| c | c| c}
+
+$$p$$
+& $$\neg p$$
+& $$\neg(\neg p)$$ \\ \hline
+T & F & T \\
+F & T & F \\
+\end{array}
+\end{displaymath}
+~\\
+\setlength\parindent{24pt}$p$ and $\neg(\neg p)$ have the same truth values in the above truth table.  Therefore, \\
+\setlength\parindent{24pt}they are logically equivalent.
+~\\
+~\\
+\setlength\parindent{0pt}5) Use a truth table to verify the Distributive Law.\\
+~\\\setlength\parindent{24pt} $p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$ \\ 
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c|c||c|c|}
+
+$ p $ & $ q $ & $ r $ & $ (q \vee r) $ & $ (p \wedge (q \vee r)) $ \\
+\hline
+T & T & T & T & T \\
+\hline
+T & T & F & T & T \\
+\hline
+T & F & T & T & T \\
+\hline
+T & F & F & F & F \\
+\hline
+F & T & T & T & F \\
+\hline
+F & T & F & T & F \\
+\hline
+F & F & T & T & F \\
+\hline
+F & F & F & F & F \\
+\end{tabular}
+\label{table:tt1}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{|c|c|c||c|c|c|}
+
+$ p $ & $ q $ & $ r $ & $ (p \wedge q) $ & $ (p \wedge r) $ & $ ((p \wedge q) \vee (p \wedge r)) $ \\
+\hline
+T & T & T & T & T & T \\
+\hline
+T & T & F & T & F & T \\
+\hline
+T & F & T & F & T & T \\
+\hline
+T & F & F & F & F & F \\
+\hline
+F & T & T & F & F & F \\
+\hline
+F & T & F & F & F & F \\
+\hline
+F & F & T & F & F & F \\
+\hline
+F & F & F & F & F & F \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+
+~\\ 
+\setlength\parindent{0pt} The final columns are identical, thus the distributive law is verified and both sides of the statement are logical equivalent.
+
+~\\
+10) Show that each of these conditional statements is a tautology by using truth tables.
+~\\~\\\setlength\parindent{0pt}a) $[\neg p \land (p \lor q)] \rightarrow q$
+\begin{table}[ht]
+\begin{tabular}{|c|c||c|c|c|c|}
+
+$ p $ & $ q $ & $  \neg p $ & $ (p \vee q) $ & $ ( \neg p \wedge (p \vee q)) $ & $ (( \neg p \wedge (p \vee q)) \rightarrow q) $ \\
+\hline
+T & T & F & T & F & T \\
+\hline
+T & F & F & T & F & T \\
+\hline
+F & T & T & T & T & T \\
+\hline
+F & F & T & F & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+
+The final row is all true thus the conditional statement is a tautology.
+~\\~\\~\\~\\\setlength\parindent{0pt}b) $[(p \rightarrow q) \land (q \iff r)] \rightarrow (p \rightarrow r)$
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c|c||c|c|c|c|c|}
+
+$ p $ & $ q $ & $ r $ & $ (p \rightarrow q) $ & $ (q \rightarrow r) $ & $ ((p \rightarrow q) \wedge (q \rightarrow r)) $ & $ (p \rightarrow r) $ & $ (((p \rightarrow q) \wedge (q \rightarrow r)) \rightarrow (p \rightarrow r)) $ \\
+
+T & T & T & T & T & T & T & T \\
+\hline
+T & T & F & T & F & F & F & T \\
+\hline
+T & F & T & F & T & F & T & T \\
+\hline
+T & F & F & F & T & F & F & T \\
+\hline
+F & T & T & T & T & T & T & T \\
+\hline
+F & T & F & T & F & F & T & T \\
+\hline
+F & F & T & T & T & T & T & T \\
+\hline
+F & F & F & T & T & T & T & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+The final row is all true thus the conditional statement is a tautology.
+
+~\\
+
+\setlength\parindent{0pt}c) $((p \land (p \rightarrow q))\rightarrow q)$
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c||c|c|c|}
+
+$ p $ & $ q $ & $ (p \rightarrow q) $ & $ (p \wedge (p \rightarrow q)) $ & $ ((p \wedge (p \rightarrow q)) \rightarrow q) $ \\
+\hline
+T & T & T & T & T \\
+\hline
+T & F & F & F & T \\
+\hline
+F & T & T & F & T \\
+\hline
+F & F & T & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+The final row is all true thus the conditional statement is a tautology.
+
+~\\
+\setlength\parindent{0pt}d) $((p \land q)\land (p \rightarrow r) \land (q	 \rightarrow r)) \rightarrow r)$
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c|c||c|c|c|c|c|c|}
+
+$ p $ & $ q $ & $ r $ & $ (p \vee q) $ & $ (p \rightarrow r) $ & $ (q \rightarrow r) $ & $ ((p \rightarrow r) \wedge (q \rightarrow r)) $ & $ ((p \vee q) \wedge ((p \rightarrow r) \wedge (q \rightarrow r))) $ & $ (((p \vee q) \wedge ((p \rightarrow r) \wedge (q \rightarrow r))) \rightarrow r) $ \\
+\hline
+T & T & T & T & T & T & T & T & T \\
+\hline
+T & T & F & T & F & F & F & F & T \\
+\hline
+T & F & T & T & T & T & T & T & T \\
+\hline
+T & F & F & T & F & T & F & F & T \\
+\hline
+F & T & T & T & T & T & T & T & T \\
+\hline
+F & T & F & T & T & F & F & F & T \\
+\hline
+F & F & T & F & T & T & T & F & T \\
+\hline
+F & F & F & F & T & T & T & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+The final row is all true thus the conditional statement is a tautology. \\ 
+~\\\setlength\parindent{0pt}14) Determine whether $(\neg p \land (p \rightarrow q)) \rightarrow \neg q)$ is a tautology. 
+\begin{table}[ht]
+\begin{tabular}{|c|c||c|c|c|c|c|}
+
+$ p $ & $ q $ & $  \neg p $ & $ (p \rightarrow q) $ & $ ( \neg p \wedge (p \rightarrow q)) $ & $  \neg q $ & $ (( \neg p \wedge (p \rightarrow q)) \rightarrow  \neg q) $ \\
+\hline
+T & T & F & T & F & F & T \\
+\hline
+T & F & F & F & F & T & T \\
+\hline
+F & T & T & T & T & F & F \\
+\hline
+F & F & T & T & T & T & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+\\The last column in the above truth table has one false value, thus it is \underline{not} a tautology. \\ 
+~\\~\\~\\~\\~\\~\\\setlength\parindent{0pt}18) Show that $p \rightarrow q$ and $\neg q \rightarrow \neg p$ are logically equivalent.\\
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c||c|}
+
+$ p $ & $ q $ & $ (p \rightarrow q) $ \\
+\hline
+T & T & T \\
+\hline
+T & F & F \\
+\hline
+F & T & T \\
+\hline
+F & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+\begin{table}[ht]
+\begin{tabular}{|c|c||c|c|c|}
+
+$ q $ & $ p $ & $  \neg q $ & $  \neg p $ & $ ( \neg q \rightarrow  \neg p) $ \\
+\hline
+T & T & F & F & T \\
+\hline
+T & F & F & T & T \\
+\hline
+F & T & T & F & F \\
+\hline
+F & F & T & T & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+The above truth tables have the same truth values in the final column, thus $p \rightarrow q$ and $\neg q \rightarrow \neg p$ are logically equivalent.
+
+~\\\setlength\parindent{0pt}31) Show that $(p \rightarrow q) \rightarrow r$ and $p \rightarrow (q \rightarrow r)$ are not logically equivalent.
+
+\begin{table}[ht]
+\begin{tabular}{|c|c|c||c|c|}
+
+$ p $ & $ q $ & $ r $ & $ (p \rightarrow q) $ & $ ((p \rightarrow q) \rightarrow r) $ \\
+\hline
+T & T & T & T & T \\
+\hline
+T & T & F & T & F \\
+\hline
+T & F & T & F & T \\
+\hline
+T & F & F & F & T \\
+\hline
+F & T & T & T & T \\
+\hline
+F & T & F & T & F \\
+\hline
+F & F & T & T & T \\
+\hline
+F & F & F & T & F \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c|c||c|c|}
+
+$ p $ & $ q $ & $ r $ & $ (q \rightarrow r) $ & $ (p \rightarrow (q \rightarrow r)) $ \\
+\hline
+T & T & T & T & T \\
+\hline
+T & T & F & F & F \\
+\hline
+T & F & T & T & T \\
+\hline
+T & F & F & T & T \\
+\hline
+F & T & T & T & T \\
+\hline
+F & T & F & F & T \\
+\hline
+F & F & T & T & T \\
+\hline
+F & F & F & T & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+
+The above truth tables have differing values in the final column, thus $(p \rightarrow q) \rightarrow r$ and $p \rightarrow (q \rightarrow r)$ are  not logically equivalent.
+
+~\\The following exercises involve the logical operators NAND and NOR.  The proposition p NAND q is true when either p and q, or both, are false; and it is false when both p and q are true.  The proposition p NOR q is true when both p and q are false, and it is false otherwise.  The propositions p NAND q and p NOR q are denoted by p | q and $p \downarrow q$ respectively.
+
+~\\~\\~\\~\\~\\~\\~\\
+46) Construct the truth table for the logical operator $NAND$
+\begin{table}[ht]
+\begin{tabular}{|c|c||c|}
+
+$ p $ & $ q $ & $ (p NAND q) $ \\
+\hline
+T & T & F \\
+\hline
+T & F & T \\
+\hline
+F & T & T \\
+\hline
+F & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+~\\ ** The NAND gate is an inverted AND.  It is false \underline{only} when both p and q are True.
+~\\~\\
+47) Show that $p | q$ is logically equivalent to $\neg (p \land q)$ \\
+** I will reuse the table used in problem 46 to represent the p NAND q table.\\
+\begin{table}[ht]
+
+\begin{tabular}{|c|c||c|c|}
+
+$ p $ & $ q $ & $ (p \wedge q) $ & $  \neg (p \wedge q) $ \\
+\hline
+T & T & T & F \\
+\hline
+T & F & F & T \\
+\hline
+F & T & F & T \\
+\hline
+F & F & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+The final column in the p NAND q table used for problem 46 is identical to the final column of the $\neg (p \land q)$ truth table.  Thus, p NAND q and $\neg (p \land q)$ are logically equivalent.
+~\\~\\48) Construct a truth table for the logical operator NOR.
+\begin{table}[ht]
+
+\begin{tabular}{|c|c||c|}
+
+$ p $ & $ q $ & $ (p NOR q) $ \\
+\hline
+T & T & F \\
+\hline
+T & F & F \\
+\hline
+F & T & F \\
+\hline
+F & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+\\ ** The is the truth table for the NOR operator.  It is an inverted OR table.  The table is only True when both p and q are false. \\
+
+~\\49) Show that $p \downarrow q$ is logically equivalent to $\neg (p \lor q)$
+\\ ** I will reuse my NOR table from problem 48 for brevity.
+
+\begin{table}[ht]
+
+\begin{tabular}{|c|c||c|c|}
+
+$ p $ & $ q $ & $ (p \vee q) $ & $  \neg (p \vee q) $ \\
+\hline
+T & T & T & F \\
+\hline
+T & F & T & F \\
+\hline
+F & T & T & F \\
+\hline
+F & F & F & T \\
+
+\end{tabular}
+\label{table:tt1}
+\end{table}
+
+The final column in the truth table for NOR matches the final column in the truth table for $\neg (p \lor q)$ thus, p NOR q and $\neg (p \lor q)$ are logically equivalent.
+
+\end{flushleft}
+\end{document}

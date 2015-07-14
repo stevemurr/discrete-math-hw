@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{color}
+\usepackage{lipsum}
+\begin{document}
+\setcounter{totalnumber}{5}
+   \begin{flushright}
+      \Large\textbf{Steven Murr}\\
+      \large\textit{HW 8.5} \\
+      \large\textit{ Problems = \{ 1,2,3,4,7,8,9,18,21\} }
+   \end{flushright}
+\begin{flushleft}
+\makeatletter% Set distance from top of page to first float
+\setlength{\@fptop}{5pt}
+\makeatother
+\setlength\parindent{0pt}1) How many elements are in $A_1 \cup A_2$ if there are 12 elements in $A_1, 18$ elements in $A_2,$ and \\
+\setlength\parindent{24pt}a) $A_1 \cap A_2 = \o$ \\
+\setlength\parindent{48pt} 30 \\
+\setlength\parindent{24pt}b) $A_1 \cap A_2 = 1$ \\
+\setlength\parindent{48pt} 12 + 18 -1 = 29 \\
+\setlength\parindent{24pt}c) $A_1 \cap A_2 = 6$ \\
+\setlength\parindent{48pt} 12 + 18 - 6 = 24 \\
+\setlength\parindent{24pt}$A_1 \subseteq A_2$ \\
+\setlength\parindent{48pt} 12 + 18 - 12 = 18 \\
+~\\
+\setlength\parindent{0pt}2) There are 345 students at a college who have taken a course in calculus, 212 who have taken a course in discrete mathematics, and 188 who have taken courses in both calculus and discrete mathematics.  How many students have taken a course in either calculus or discrete mathematics? \\
+\setlength\parindent{24pt} 345 + 212 - 188 = 369 \\
+~\\
+\setlength\parindent{0pt}3) A survey of households in the United States reveals that 96\% have at least one televsion set, 98\% have telephone service and 95\% have telephone service and at least one television set.  What percentage of households in the United State have neither telephone service nor a television set? \\
+\setlength\parindent{24pt}96 + 98 - 95 = 1\% has neither a television set or a telephone. \\
+~\\
+\setlength\parindent{0pt}4) A marketing report concerning personal computers states that 650,000 owners will buy a printer for their machines next year and 1,250,000 will buy at least one software package.  If the report state that 1,450,000 owners will buy either a printer or at least one software package, how many will buy both a printer and at least on software package? \\
+\setlength\parindent{24pt}We use the form A + B - $A \cup B = A \cap B$ \\
+\setlength\parindent{24pt}650,000 + 1,250,000 - 1,450,000 = 450,000 \\
+~\\
+\setlength\parindent{0pt}7) There are 2504 computer science students at a school.  Of these, 1876 have taken a course in java, 999 have taken a course in linux, and 345 have taken a course in C.  Further, 876 have taken courses in both java and linux, 231 have taken courses in both linux and c, and 290 have taken courses in both java and c.  If 189 of these students have taken courses in linux, java, and c how many of these 2504 students have not taken a course in any of these three programming languages. \\
+\setlength\parindent{24pt} (all students) - (taking at least 1) + (taking at least 2) - (taking all 3) \\
+\setlength\parindent{24pt} 2504 - (1876 + 999 + 345) + (876 + 231 + 290) - 189 = 492 students.\\
+~\\
+\setlength\parindent{0pt}8) In a survey of 270 college students, it is found that 64 like brussel sprouts, 94 like broccoli, 58 like cauliflower, 26 like both brussel sprouts and broccoli, 28 like both brussel sprouts and cauliflour and 14 like all three vegetables.  How many of the 270 students do not like any of these vegetables?  \\
+~\\
+\setlength\parindent{24pt}270 - (94+58+64-22-26-28+14) = 116 like none. \\
+~\\
+\setlength\parindent{0pt}9) How many students are enrolled in a course either in calculus, discrete mathematics, data structures or programming languages at a school if there are 507, 292, 312, and 344 students in these courses, respectively;  14 in both calculus and data structures; 213 in both calculus and programming languages; 211 in both discrete mathematics and data structures; 43 in both discrete math and programming languages; and no student may take calculus and discrete mathematics or data structures and programming languages, concurrently.  \\
+~\\
+A = calculus \\
+B = discrete \\
+C = data structures \\ 
+D = programming languages \\ 
+$A \cup B \cup C \cup D = A + B + C + D - A\cap B - A\cap C - A\cap D - B\cap C - B\cap D - C\cap D + A\cap B \cap C + A\cap B \cap D +  A\cap C \cap D +  B\cap C \cap D - A \cap B \cap C \cap D = 507 + 292 + 312 +  344 - 14 -213 -211 -43 + 0 = 974$ \\
+~\\
+\setlength\parindent{0pt}18) How many terms are there in the formula for the number of elements in the union of 10 sets given by the principle of inclusion-exclusion? \\
+\setlength\parindent{24pt} It's the sum of ${10 \choose 1} + {10 \choose 2} . . . + {10 \choose 10}$ \\
+\setlength\parindent{24pt} Also, $2^{10} - 1 = 1023$ ways. \\
+~\\
+\setlength\parindent{0pt}21) Write out the explicit formula given by the principle of inclusion-exclusion for the number of elements in the union of six sets when it is known that no three of these sets have a common intersection. \\
+**See attache sheet
+
+\end{flushleft}
+\end{document}
